@@ -1,0 +1,10 @@
+<svg width="140" height="40" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f7f1c6"/>
+      <stop offset="40%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8d6e11"/>
+    </linearGradient>
+  </defs>
+  <text x="4" y="28" font-family="Georgia, serif" font-weight="bold" font-size="26" fill="url(#g)">Wankers</text>
+</svg>

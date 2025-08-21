@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "solo-wanker",
+    "name": "Solo Wanker",
+    "price": 10,
+    "image": "/images/solo.png",
+    "description": "Your go-to for a party of one. Comes with 1 Medium Home Base Stroker and 1 pocket-ready premium wank buddy. Sleek. Discreet. Always up for a quickie. Perfect for those solo missions when the mood hits and the world can wait.",
+    "buyUrl": "https://buy.stripe.com/test_123_solo"
+  },
+  {
+    "slug": "common-man-wanker",
+    "name": "Common Man Wanker",
+    "price": 20,
+    "image": "/images/common.png",
+    "description": "Built for the everyday working man. Includes 1 Medium Home Base Stroker, 1 pocket-ready solo sidekick, and 1 travel-size wanker for, you know… emergencies. Reliable, versatile, and always down for a tug on the go.",
+    "buyUrl": "https://buy.stripe.com/test_123_common"
+  },
+  {
+    "slug": "Professional-Wanker",
+    "name": "Professional Wanker",
+    "price": 39.0,
+    "image": "/images/feelgood.png",
+    "description": "For the seasoned stroker with taste. Comes with 1 Large Luxe Home Base Stroker, 2 pocket-ready solo slingers, 2 on-the-run quick-grip wankers, and 1 just-in-case ‘break glass in case of horny’ emergency wanker. The connoisseur’s kit. Smooth. Sophisticated. Stroke-tastic.",
+    "buyUrl": "https://buy.stripe.com/test_123_professional"
+  }
+]
