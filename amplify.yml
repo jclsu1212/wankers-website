@@ -1,0 +1,22 @@
+version: 1
+applications:
+  - appRoot: wankers-ecommerce-starter   # your app is inside this subfolder
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm install
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        baseDirectory: .next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+    environment:
+      variables:
+        NODE_VERSION: '18'
+        NEXT_TELEMETRY_DISABLED: '1'
