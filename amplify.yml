@@ -6,10 +6,37 @@ applications:
       phases:
         preBuild:
           commands:
-            - npm ci
+            # Use Node 20 consistently
+            - nvm install 20 || true
+            - nvm use 20 || true
+
+            # Detect package manager + install safely (handles missing lockfiles)
+            - |
+              if [ -f pnpm-lock.yaml ]; then
+                corepack enable || true
+                pnpm install --frozen-lockfile || pnpm install
+                export PM_RUN="pnpm"
+              elif [ -f yarn.lock ]; then
+                corepack enable || true
+                yarn install --frozen-lockfile || yarn install
+                export PM_RUN="yarn"
+              elif [ -f package-lock.json ]; then
+                npm ci || npm install
+                export PM_RUN="npm"
+              else
+                npm install
+                export PM_RUN="npm"
+              fi
+
+            # Helpful envs
+            - export NEXT_TELEMETRY_DISABLED=1
+            - export CI=1
+
         build:
           commands:
-            - npm run build
+            - |
+              if [ -z "$PM_RUN" ]; then PM_RUN="npm"; fi
+              $PM_RUN run build
       artifacts:
         baseDirectory: .next
         files:

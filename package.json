@@ -1,6 +1,3 @@
-{
-  "scripts": {
-    "build": "next build",
-    "export": "next export"
-  }
+"scripts": {
+  "build": "next build"
 }
