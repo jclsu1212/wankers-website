@@ -1,7 +1,6 @@
 version: 1
 applications:
-  - appRoot: wankers-ecommerce-starter
-    platform: WEB_DYNAMIC
+  - platform: WEB_DYNAMIC
     frontend:
       framework: nextjs
       phases:
